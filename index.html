@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Background Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      form {
+        width: 80%;
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px; /* Adjust the gap as needed */
+      }
+
+      .column1,
+      .column2 {
+        display: grid;
+        grid-template-columns: max-content 1fr;
+        gap: 10px; /* Adjust the gap as needed */
+      }
+
+      label {
+        margin-bottom: 5px;
+        text-align: right;
+      }
+
+      input {
+        width: 70%;
+        height: fit-content;
+        padding: 5px;
+        margin-bottom: 0px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: -0px;
+        box-shadow: 0 0 1px rgb(0, 0, 0);
+      }
+
+      input:not([value=""]) {
+        background-color: yellow;
+      }
+
+      .double-input {
+        display: flex;
+        gap: 10px;
+      }
+
+      .double-input input {
+        flex: 1;
+      }
+
+      button {
+        grid-column: span 2;
+        padding: 10px 15px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <div class="column1">
+        <label for="field1">No. Kredit</label>
+        <input
+          type="text"
+          style="background-color: #ffffff"
+          id="field1"
+          name="field1"
+        />
+
+        <label for="field2">CIF</label>
+        <input type="text" id="field2" name="field2" />
+
+        <label for="field3">Produk</label>
+        <input type="text" id="field3" name="field3" />
+
+        <label for="field4">Sisa Pokok</label>
+        <input type="text" id="field4" name="field4" />
+
+        <label for="field5">Tunggakan Pokok</label>
+        <input type="text" id="field5" name="field5" />
+
+        <label for="field6">Denda Tunggakan</label>
+        <input type="text" id="field6" name="field6" />
+
+        <label for="field7">Total Kewajiban</label>
+        <input type="text" id="field7" name="field7" />
+
+        <label for="field8">Diskon Pelunasan</label>
+        <input type="text" id="field8" name="field8" />
+
+        <label for="field9">Total Kewajiban Nasabah</label>
+        <input type="text" id="field9" name="field9" />
+
+        <label for="field10">Nominal Yang Harus Dibayar</label>
+        <input type="text" id="field10" name="field10" />
+      </div>
+
+      <div class="column2">
+        <label for="field11">Nama Nasabah</label>
+        <input type="text" id="field11" name="field11" />
+
+        <label for="field12">Tarif</label>
+        <input type="text" id="field12" name="field12" />
+
+        <label for="field13">Sisa Sewa Modal</label>
+        <input type="text" id="field13" name="field13" />
+
+        <label for="field14">Tunggakan SM</label>
+        <input type="text" id="field14" name="field14" />
+
+        <label for="field15">Total Tunggakan</label>
+        <input type="text" id="field15" name="field15" />
+
+        <label for="field16">Sewa Modal Dibayar</label>
+        <input type="text" id="field16" name="field16" />
+
+        <label for="field17">Persen Potongan</label>
+        <input type="text" id="field17" name="field17" />
+      </div>
+    </form>
+  </body>
+</html>
